@@ -39,7 +39,7 @@ import {
       title: "Contact",
     },
   ];
-  
+  // TODO: Change services to your services
   const services = [
     {
       title: "Web Developer",
@@ -57,8 +57,12 @@ import {
       title: "Content Creator",
       icon: creator,
     },
+    {
+      title: "Ironman",
+      icon: figma,
+    },
   ];
-  
+  // TODO: Change technologies to your technologies
   const technologies = [
     {
       name: "HTML 5",
@@ -113,7 +117,7 @@ import {
       icon: docker,
     },
   ];
-  
+  // TODO: Change experiences to your work experiences
   const experiences = [
     {
       title: "React.js Developer",
@@ -168,7 +172,7 @@ import {
       ],
     },
   ];
-  
+  // TODO: take out testimonials if you don't want to use it
   const testimonials = [
     {
       testimonial:
@@ -195,7 +199,7 @@ import {
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
-  
+  // TODO: Change projects to your projects
   const projects = [
     {
       name: "Car Rent",
