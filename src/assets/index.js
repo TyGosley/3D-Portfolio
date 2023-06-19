@@ -6,6 +6,12 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import frontend from "./frontend.png";
+import database from "./database.png";
+import talent from "./talent.png";
+import collaborating from "./collaborating.png";
+
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -34,6 +40,10 @@ import tripguide from "./tripguide.png";
 export {
   logo,
   backend,
+  frontend,
+  database,
+  talent,
+  collaborating,
   creator,
   mobile,
   web,

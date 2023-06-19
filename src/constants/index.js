@@ -1,6 +1,8 @@
 import {
     mobile,
     backend,
+    frontend,
+    database,
     creator,
     web,
     javascript,
@@ -23,6 +25,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    talent,
+    collaborating,
   } from "../assets";
   
   export const navLinks = [
@@ -46,20 +50,32 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Frontend Developer",
+      icon: frontend,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
     {
+      title: "React Developer",
+      icon: reactjs,
+    },
+    {
       title: "Content Creator",
       icon: creator,
     },
     {
-      title: "Ironman",
-      icon: figma,
+      title: "Database Management",
+      icon: database,
+    },
+    {
+      title: "Talent Sourcing",
+      icon: talent,
+    },
+    {
+      title: "Candidate and Manager Collaboration",
+      icon: collaborating,
     },
   ];
   // TODO: Change technologies to your technologies
@@ -76,10 +92,10 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
