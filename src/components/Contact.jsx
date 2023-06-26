@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { validateEmail } from "../utils/helpers";
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { motion } from "framer-motion";
@@ -74,7 +74,7 @@ function Contact() {
               name="name"
               value={name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="Please enter your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -85,7 +85,7 @@ function Contact() {
               name="email"
               value={email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="Please enter your email address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -96,7 +96,7 @@ function Contact() {
               name="message"
               value={message}
               onChange={handleChange}
-              placeholder="What you want to say?"
+              placeholder="What's on your mind?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -117,7 +117,7 @@ function Contact() {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
       </motion.div>
     </div>
   );

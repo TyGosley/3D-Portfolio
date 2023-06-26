@@ -13,7 +13,7 @@ import talent from "./talent.png";
 import collaborating from "./collaborating.png";
 
 
-
+// TODO: Change docker, redux, typescript, 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -28,7 +28,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-// TODO: Replace with real logos
+
 
 import stretchlab from "./company/stretchlab.png";
 import prevail from "./company/prevail.png";
@@ -36,9 +36,11 @@ import selffit from "./company/selffit.png";
 import ymca from "./company/ymca.png";
 import stevensonfit from "./company/stevensonfit.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// Project images
+// TODO: add more projects
+import upliftifyAi from "./upliftifyAi.png";
+import metalMindz from "./metalMindz.png";
+import digitalpp from "./digitalpp.png";
 
 export {
   logo,
@@ -72,7 +74,7 @@ export {
   stevensonfit,
   stretchlab,
   prevail,
-  carrent,
-  jobit,
-  tripguide,
+  upliftifyAi,
+  metalMindz,
+  digitalpp,
 };

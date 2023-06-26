@@ -1,12 +1,11 @@
 import {
-  mobile,
+  
   backend,
   frontend,
   database,
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
@@ -17,9 +16,9 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
+  upliftifyAi,
+  metalMindz,
+  digitalpp,
   threejs,
   talent,
   collaborating,
@@ -43,8 +42,12 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "resume",
+    title: "Resume",
+  }
 ];
-// TODO: Change services to your services
+
 const services = [
   {
     title: "Web Developer",
@@ -93,10 +96,6 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -134,7 +133,7 @@ const technologies = [
     icon: docker,
   },
 ];
-// TODO: Change experiences to your work experiences
+
 const experiences = [
   {
     title: "Online Health & Wellness Coach",
@@ -229,12 +228,12 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
-// TODO: Change projects to your projects
+
 const projects = [
   {
-    name: "Car Rent",
+    name: "Upliftify AI",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "User-centric platform that allows users to enter their current mood and get suggestions for activities to improve or enhance their mood.",
     tags: [
       {
         name: "react",
@@ -245,20 +244,20 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "graphql",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: upliftifyAi,
+    source_code_link: "https://github.com/TyGosley/upliftify-ai",
   },
   {
-    name: "Job IT",
+    name: "Metal Mindz",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "MetalMindz is a social app for FRC robot builders. Show off your creations, connect with others, and get inspired. Simply create a profile, upload photos of your robots, and join a community of like-minded enthusiasts.",
     tags: [
       {
-        name: "react",
+        name: "node.js",
         color: "blue-text-gradient",
       },
       {
@@ -266,34 +265,103 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "MySQL",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: metalMindz,
+    source_code_link: "https://github.com/mynamebrogrammer/MetalMindz",
   },
   {
-    name: "Trip Guide",
+    name: "Digital Pencil Pusher",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
     tags: [
       {
-        name: "nextjs",
+        name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "node.js",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: digitalpp,
+    source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+  },
+  {
+    name: "Digital Pencil Pusher",
+    description:
+      "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
+    tags: [
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: digitalpp,
+    source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+  },
+  {
+    name: "Digital Pencil Pusher",
+    description:
+      "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
+    tags: [
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: digitalpp,
+    source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+  },
+  {
+    name: "Digital Pencil Pusher",
+    description:
+      "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
+    tags: [
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: digitalpp,
+    source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+// const resumeSection = {
+//   title: "Check out my resume",
+//   // eslint-disable-next-line no-undef
+//   resumeLink: process.env.REACT_APP_RESUME_DRIVE_LINK,
+// };
+
+export { services, technologies, experiences, projects, testimonials };

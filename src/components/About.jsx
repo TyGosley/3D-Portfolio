@@ -52,7 +52,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        {/* TODO:  Change info */}
+        
         Hello there, my name is Tyler Gosley and I'm a Full Stack Web Developer
         and Aspiring Tech Recruiter based in Southern California. Originally from
         Vermont, I graduated from Plymouth State University with a degree in
