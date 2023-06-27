@@ -3,6 +3,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { validateEmail } from "../utils/helpers";
 import { styles } from "../styles";
 // import { EarthCanvas } from "./canvas";
+import MyImage from "../assets/whatsupdoc.jpg";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { motion } from "framer-motion";
@@ -115,9 +116,9 @@ function Contact() {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] flex items-center justify-center"
       >
-        {/* <EarthCanvas /> */}
+        <img src={MyImage} alt="My Image" className="w-full h-3/4 rounded-lg"/>
       </motion.div>
     </div>
   );

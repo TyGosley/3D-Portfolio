@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* TODO: Use own logo */}
           <img src={baplogo} alt="logo" className="w-20 h-20 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Tyler Gosley &nbsp; <span className="sm:block hidden">  | Full Stack Developer </span>
+            Tyler Gosley &nbsp; <span className="sm:block hidden">  | Full Stack Developer  | tygosley@gmail.com</span>
           </p>
         </Link>
 

@@ -6,9 +6,12 @@ const App = () => {
     <BrowserRouter>
     <div className="relative z-0 bg-primary">
       {/* TODO: Edit pattern below */}
-      <div className ="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+      <div >
         <Navbar />
+        <div className="relative z-0">
         <Hero />
+        <StarsCanvas />
+        </div>
         </div>
         <About />
         <Experience />
