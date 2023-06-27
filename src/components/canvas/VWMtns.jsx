@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
+const VWMtns = ({ isMobile }) => {
   const computer = useGLTF("./vwavemtns/scene.gltf");
 
   return (
@@ -30,7 +30,7 @@ const Computers = ({ isMobile }) => {
   );
 };
 
-const ComputersCanvas = () => {
+const VapeWaveMtns = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -69,7 +69,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <VWMtns isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
@@ -77,4 +77,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default ComputersCanvas;
+export default VapeWaveMtns;
