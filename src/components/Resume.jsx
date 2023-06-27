@@ -1,27 +1,38 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
+import tylerGResume from "../assets/tylerGResume.pdf";
+
 
 const Resume = () => {
   return (
-    <div className="bg-black-100 rounded-[20px] p-6">
-      <div className="bg-tertiary rounded-2xl p-4">
-        <p className="text-white text-center text-lg font-medium">Download My Resume</p>
-        <h2 className="text-white text-center text-3xl font-bold">Resume</h2>
+    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+      <div
+        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+      >
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>My Resume</p>
+          <h2 className={styles.sectionHeadText}>Resume</h2>
+        </motion.div>
       </div>
-      <div className="mt-6 flex justify-center">
-        <a
-          href="/path/to/your/resume.pdf"
-          download="resume.pdf"
-          className="flex items-center gap-2 py-2 px-4 bg-blue-500 text-white rounded-full hover:bg-blue-600"
+      <div className={`-mt-20 pb-14 ${styles.paddingX}`}>
+        <motion.div
+          variants={fadeIn("", "spring", 0, 0.75)}
+          className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
         >
-          <FontAwesomeIcon icon={faDownload} />
-          <span>Download</span>
-        </a>
+          <div className="flex justify-center items-center">
+            <a
+              href={tylerGResume}
+              download="tylerGResume.pdf"
+              className="text-white font-black text-[48px]"
+            >
+              <FiDownload />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
