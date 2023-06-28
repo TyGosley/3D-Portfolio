@@ -1,4 +1,4 @@
-import { f } from "maath/dist/index-43782085.esm";
+import { p } from "maath/dist/misc-7d870b3c.esm";
 import {
   
   backend,
@@ -16,12 +16,12 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  jest,
   upliftifyAi,
   metalMindz,
   digitalpp,
   filmfilter,
-  fwAPI,
+  profilegen,
   cityweathermon,
   threejs,
   talent,
@@ -86,7 +86,6 @@ const services = [
     icon: collaborating,
   },
 ];
-// TODO: Change technologies to your technologies
 const technologies = [
   {
     name: "HTML 5",
@@ -133,9 +132,10 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "jest",
+    icon: jest,
   },
+  
 ];
 
 const experiences = [
@@ -205,33 +205,6 @@ const experiences = [
     ],
   },
 ];
-// TODO: take out testimonials if you don't want to use it
-// const testimonials = [
-//   {
-//     testimonial:
-//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-//     name: "Sara Lee",
-//     designation: "CFO",
-//     company: "Acme Co",
-//     image: "https://randomuser.me/api/portraits/women/4.jpg",
-//   },
-//   {
-//     testimonial:
-//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-//     name: "Chris Brown",
-//     designation: "COO",
-//     company: "DEF Corp",
-//     image: "https://randomuser.me/api/portraits/men/5.jpg",
-//   },
-//   {
-//     testimonial:
-//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-//     name: "Lisa Wang",
-//     designation: "CTO",
-//     company: "456 Enterprises",
-//     image: "https://randomuser.me/api/portraits/women/6.jpg",
-//   },
-// ];
 
 const projects = [
   {
@@ -254,6 +227,7 @@ const projects = [
     ],
     image: upliftifyAi,
     source_code_link: "https://github.com/TyGosley/upliftify-ai",
+    deployed_link: "https://young-fjord-87533.herokuapp.com/",
   },
   {
     name: "Metal Mindz",
@@ -275,6 +249,7 @@ const projects = [
     ],
     image: metalMindz,
     source_code_link: "https://github.com/mynamebrogrammer/MetalMindz",
+    deployed_link: "https://metal-mindz.herokuapp.com/",
   },
   {
     name: "Digital Pencil Pusher",
@@ -296,6 +271,7 @@ const projects = [
     ],
     image: digitalpp,
     source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+    deployed_link: "https://afternoon-springs-13154.herokuapp.com/"
   },
   {
     name: "Film Filter",
@@ -317,14 +293,15 @@ const projects = [
     ],
     image: filmfilter,
     source_code_link: "https://michaelx626.github.io/Film-Filter/index.html",
+    deployed_link: "https://michaelx626.github.io/Film-Filter/index.html",
   },
   {
-    name: "Friends With APItions",
+    name: "Team Profile Generator",
     description:
-      "Friends-with-API-tions is a social network web application that is designed on the backend, where users can create and share their thoughts. Users can also react to friends thoughts and have their thoughts reacted upon.",
+      "This simple application allows you to generate a webpage that display's your team's basic info so that you have quick access to their information.",
     tags: [
       {
-        name: "mongodb",
+        name: "jest",
         color: "blue-text-gradient",
       },
       {
@@ -336,8 +313,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: fwAPI,
-    source_code_link: "https://github.com/TyGosley/friends-with-API-tions",
+    image: profilegen,
+    source_code_link: "https://github.com/TyGosley/team-profile-generator",
+    deployed_link: "https://drive.google.com/file/d/13ZRr9mMGcIVyYjcc97YfvsTegwQ0tO1r/view",
   },
   {
     name: "City Weather Monitor",
@@ -359,6 +337,7 @@ const projects = [
     ],
     image: cityweathermon,
     source_code_link: "https://tygosley.github.io/city-weather-monitor/",
+    deployed_link: "https://tygosley.github.io/city-weather-monitor/",
   },
 ];
 

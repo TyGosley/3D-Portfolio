@@ -1,3 +1,4 @@
+// Proficiencies 
 import logo from "./logo.svg";
 import baplogo from "./baplogo.png";
 import backend from "./backend.png";
@@ -14,15 +15,15 @@ import collaborating from "./collaborating.png";
 import tylerGResume from "./tylerGResume.pdf";
 
 
-// TODO: Change docker, redux, typescript, 
+// Technologies 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
+import jest from "./tech/jest.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
@@ -37,14 +38,13 @@ import selffit from "./company/selffit.png";
 import ymca from "./company/ymca.png";
 import stevensonfit from "./company/stevensonfit.png";
 
-// Project images
-// TODO: add more projects
+// Project image
 import upliftifyAi from "./upliftifyAi.png";
 import metalMindz from "./metalMindz.png";
 import digitalpp from "./digitalpp.png";
 import filmfilter from "./filmfilter.png";
 import cityweathermon from "./cityweathermon.png";
-import fwAPI from "./fwAPI.png";
+import profilegen from "./profilegen.png";
 
 export {
   logo,
@@ -61,8 +61,8 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
+  jest,
   git,
   html,
   javascript,
@@ -83,5 +83,5 @@ export {
   digitalpp,
   filmfilter,
   cityweathermon,
-  fwAPI,
+  profilegen,
 };

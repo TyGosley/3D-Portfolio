@@ -1,3 +1,5 @@
+// Code for testimonials section
+
 // import React from "react";
 // import { motion } from "framer-motion";
 
