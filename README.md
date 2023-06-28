@@ -68,11 +68,6 @@ To install and set up the React MERN Stack Application, follow these simple step
 This command will initiate the server and compile the React components, allowing you to access and interact with the application in your browser.
 ___
 
-## Usage
-
-FILL In
-___
-
 ## Screenshot
 
 ___
