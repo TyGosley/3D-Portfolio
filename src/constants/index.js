@@ -1,3 +1,4 @@
+import { f } from "maath/dist/index-43782085.esm";
 import {
   
   backend,
@@ -19,6 +20,9 @@ import {
   upliftifyAi,
   metalMindz,
   digitalpp,
+  filmfilter,
+  fwAPI,
+  cityweathermon,
   threejs,
   talent,
   collaborating,
@@ -294,9 +298,9 @@ const projects = [
     source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
   },
   {
-    name: "Digital Pencil Pusher",
+    name: "Film Filter",
     description:
-      "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
+      "This application allows the user to search for their favorite movie based on their inputs.  The movie data will be retrieved from the OMDB API and displayed on the page.  The user will also be able to save their favorite movies to the local storage.",
     tags: [
       {
         name: "css",
@@ -307,20 +311,20 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "node.js",
+        name: "restapi",
         color: "pink-text-gradient",
       },
     ],
-    image: digitalpp,
-    source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+    image: filmfilter,
+    source_code_link: "https://michaelx626.github.io/Film-Filter/index.html",
   },
   {
-    name: "Digital Pencil Pusher",
+    name: "Friends With APItions",
     description:
-      "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
+      "Friends-with-API-tions is a social network web application that is designed on the backend, where users can create and share their thoughts. Users can also react to friends thoughts and have their thoughts reacted upon.",
     tags: [
       {
-        name: "css",
+        name: "mongodb",
         color: "blue-text-gradient",
       },
       {
@@ -332,29 +336,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: digitalpp,
-    source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+    image: fwAPI,
+    source_code_link: "https://github.com/TyGosley/friends-with-API-tions",
   },
   {
-    name: "Digital Pencil Pusher",
+    name: "City Weather Monitor",
     description:
-      "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
+      "The City Weather Monitor will help users find a major city's current weather as well as a 5 day forecast. The weather will display the date, the temperature, wind, and humidity.",
     tags: [
       {
         name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "html",
         color: "green-text-gradient",
       },
       {
-        name: "node.js",
+        name: "api key",
         color: "pink-text-gradient",
       },
     ],
-    image: digitalpp,
-    source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+    image: cityweathermon,
+    source_code_link: "https://tygosley.github.io/city-weather-monitor/",
   },
 ];
 

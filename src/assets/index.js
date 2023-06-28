@@ -42,6 +42,9 @@ import stevensonfit from "./company/stevensonfit.png";
 import upliftifyAi from "./upliftifyAi.png";
 import metalMindz from "./metalMindz.png";
 import digitalpp from "./digitalpp.png";
+import filmfilter from "./filmfilter.png";
+import cityweathermon from "./cityweathermon.png";
+import fwAPI from "./fwAPI.png";
 
 export {
   logo,
@@ -78,4 +81,7 @@ export {
   upliftifyAi,
   metalMindz,
   digitalpp,
+  filmfilter,
+  cityweathermon,
+  fwAPI,
 };
