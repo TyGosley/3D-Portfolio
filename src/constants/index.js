@@ -1,4 +1,4 @@
-import { p } from "maath/dist/misc-7d870b3c.esm";
+
 import {
   
   backend,
@@ -43,13 +43,17 @@ export const navLinks = [
     title: "Work",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "resume",
     title: "Resume",
-  }
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
 ];
 
 const services = [
@@ -292,7 +296,7 @@ const projects = [
       },
     ],
     image: filmfilter,
-    source_code_link: "https://michaelx626.github.io/Film-Filter/index.html",
+    source_code_link: "https://github.com/Michaelx626/Film-Filter",
     deployed_link: "https://michaelx626.github.io/Film-Filter/index.html",
   },
   {
@@ -336,7 +340,7 @@ const projects = [
       },
     ],
     image: cityweathermon,
-    source_code_link: "https://tygosley.github.io/city-weather-monitor/",
+    source_code_link: "https://github.com/TyGosley/city-weather-monitor",
     deployed_link: "https://tygosley.github.io/city-weather-monitor/",
   },
 ];
