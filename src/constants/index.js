@@ -1,10 +1,12 @@
 
+import { p } from "maath/dist/misc-7d870b3c.esm";
 import {
   
   backend,
   frontend,
   database,
   creator,
+  projectmanagement,
   web,
   javascript,
   html,
@@ -29,6 +31,7 @@ import {
   prevail,
   selffit,
   stretchlab,
+  boldlyfine,
   ymca,
   stevensonfit,
 } from "../assets";
@@ -58,6 +61,10 @@ export const navLinks = [
 
 const services = [
   {
+    title: "Project Management",
+    icon: projectmanagement,
+  },
+  {
     title: "Web Developer",
     icon: web,
   },
@@ -72,10 +79,6 @@ const services = [
   {
     title: "React Developer",
     icon: reactjs,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
   {
     title: "Database Management",
@@ -144,6 +147,18 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Project Manager",
+    company_name: "Boldly Fine, LLC",
+    icon: boldlyfine,
+    iconBg: "#383E56",
+    date: "November - Present",
+    points: [
+      "Stratgeically orchestrates complex projects by aligning teams, managing resources, and ensuring success through effective communication and collaboration.",
+      "Specializing in project corrdination, effecient planning and organization of project activities, budget management, and timeline oversight are key aspects, fostering a creative and productive team environment.",
+      "Identifying mitigating risks, proficiently solving problems, and ensuring the successful delivery of projects despite challanges are key strengths.",
+    ],
+  },
+  {
     title: "Online Health & Wellness Coach",
     company_name: "Self-employed",
     icon: selffit,
@@ -162,9 +177,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Oct 2021 - Present",
     points: [
-      "Deliver one-on-one assisted stretch sessions, encouraging and motivating clients throughout stretch sessions",
+      "Deliver one-on-one assisted stretch sessions, encouraging and motivating clients throughout stretch sessions.",
       "Assess clients' movement patterns using unique software and body mapping technologies.",
-      "Using technology and databases, create and store all essential client information to provide them with the best possible experience while meeting their individual needs ",
+      "Using technology and databases, create and store all essential client information to provide them with the best possible experience while meeting their individual needs.",
     ],
   },
   {

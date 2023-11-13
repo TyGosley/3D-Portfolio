@@ -52,21 +52,23 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        
-        Hello there, my name is Tyler Gosley and I'm a Full Stack Web Developer
-        and Aspiring Tech Recruiter based in Southern California. Originally from
-        Vermont, I graduated from Plymouth State University with a degree in
-        Education. After graduation, I found my passion in the fitness industry
-        and spent the last 10 years helping others achieve amazing results,
-        better health, and more confidence. However, I've always been intrigued
-        by the world of technology and decided to pursue my dream of becoming a
-        Full Stack Web Developer. Outside of work, I love to stay active and
-        explore new places. One of my favorite hobbies is thru-hiking, which has
-        led me on some incredible adventures and provided me with some great
-        stories to tell. But most importantly, I enjoy spending time with my
-        friends and family. Thanks for taking the time to read about me. Feel
-        free to browse through my portfolio and don't hesitate to reach out if
-        you have any questions or would like to connect.
+        Hello there, my name is Tyler Gosley, a dedicated Project Manager and
+        Full Stack Web Developer based in Southern California. Originally from
+        Vermont, I earned my degree in Education from Plymouth State University.
+        Over the past 10 years, I've ventured into various fields, starting with
+        a fulfilling journey in the fitness industry. There, I helped
+        individuals achieve remarkable results, fostering better health and
+        confidence. My passion for technology eventually led me to pursue a
+        career as a Full Stack Web Developer. I'm excited to share that I am now
+        a dedicated Project Manager, bringing together my development skills
+        with over a decade of experience in guiding others towards success.
+        Beyong the professional realm, I'm an avid explorer who enjoys staying
+        active and uncovering new places. Thru-hiking is one of my favorite
+        hobbies, providing me with incredible adventures and stories to share.
+        However, the most cherished moments are those spent with friends and
+        family. Thank you for taking the time to learn more about me. Feel free
+        to explore my portfolio, and don't hesitate to reach out if you have any
+        questions or would like to connect!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

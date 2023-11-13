@@ -5,6 +5,7 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import projectmanagement from "./projectmanagement.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -31,7 +32,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 
-
+import boldlyfine from "./company/boldlyfine.png";
 import stretchlab from "./company/stretchlab.png";
 import prevail from "./company/prevail.png";
 import selffit from "./company/selffit.png";
@@ -57,6 +58,7 @@ export {
   creator,
   mobile,
   web,
+  projectmanagement,
   github,
   menu,
   close,
@@ -74,6 +76,7 @@ export {
   typescript,
   threejs,
   selffit,
+  boldlyfine,
   ymca,
   stevensonfit,
   stretchlab,
