@@ -153,9 +153,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "November - Present",
     points: [
-      "Stratgeically orchestrates complex projects by aligning teams, managing resources, and ensuring success through effective communication and collaboration.",
-      "Specializing in project corrdination, effecient planning and organization of project activities, budget management, and timeline oversight are key aspects, fostering a creative and productive team environment.",
-      "Identifying mitigating risks, proficiently solving problems, and ensuring the successful delivery of projects despite challanges are key strengths.",
+      "Strategically orchestrates complex projects by aligning teams, managing resources, and ensuring success through effective communication and collaboration.",
+      "Specializing in project coordination, efficient planning, and organization of project activities, budget management, timeline oversight, and fostering a creative and productive team environment.",
+      "Identifying mitigating risks, proficiently solving problems, and ensuring the successful delivery of projects despite challenges.",
     ],
   },
   {
