@@ -1,5 +1,4 @@
-import { motion, useMotionValue, useTransform } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { VapeWaveMtns } from "./canvas";
 
@@ -14,44 +13,9 @@ const shimmerStyle = {
   display: "inline-block",
 };
 
-const TiltWord = ({ children, delay }) => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const rotateX = useTransform(y, [-50, 50], [8, -8]);
-  const rotateY = useTransform(x, [-50, 50], [-8, 8]);
-
-  const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left - rect.width / 2;
-    const offsetY = e.clientY - rect.top - rect.height / 2;
-    x.set(offsetX);
-    y.set(offsetY);
-  };
-
-  const handleMouseLeave = () => {
-    x.set(0);
-    y.set(0);
-  };
-
-  return (
-    <motion.span
-      style={shimmerStyle}
-      className="shimmer-text"
-      initial={{ opacity: 0, x: delay < 1.6 ? -30 : 30 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay, duration: 0.6 }}
-      style={{ ...shimmerStyle, rotateX, rotateY }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
-      {children}
-    </motion.span>
-  );
-};
-
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className="relative w-full h-screen mx-auto">
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -71,7 +35,7 @@ const Hero = () => {
           />
         </div>
 
-        {/* Animated Text */}
+        {/* Hero Text */}
         <div>
           <motion.h1
             className={`${styles.heroHeadText} text-white`}
@@ -79,7 +43,26 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.3, duration: 0.8 }}
           >
-            Where <TiltWord delay={1.5}>Vision</TiltWord> Meets <TiltWord delay={1.8}>Code</TiltWord>
+            Where{" "}
+            <motion.span
+              style={shimmerStyle}
+              className="shimmer-text"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1.5, duration: 0.6 }}
+            >
+              Vision
+            </motion.span>{" "}
+            Meets{" "}
+            <motion.span
+              style={shimmerStyle}
+              className="shimmer-text"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1.8, duration: 0.6 }}
+            >
+              Code
+            </motion.span>
           </motion.h1>
 
           <motion.p
@@ -101,7 +84,7 @@ const Hero = () => {
         <a href="#about"></a>
       </div>
 
-      {/* Shimmer, Glow, and Hover Speed Effect */}
+      {/* Animations */}
       <style>
         {`
           @keyframes shimmer {
@@ -118,7 +101,6 @@ const Hero = () => {
           .shimmer-text {
             animation: shimmer 3s ease-in-out infinite, glow 4s ease-in-out infinite;
             transition: animation-duration 0.3s ease, transform 0.2s ease;
-            will-change: transform;
           }
 
           .shimmer-text:hover {
