@@ -1,17 +1,18 @@
-
+// eslint-disable-next-line no-unused-vars
 import { p } from "maath/dist/misc-7d870b3c.esm";
 import {
-  
   backend,
   frontend,
   database,
-  creator,
   projectmanagement,
   web,
   javascript,
   html,
   css,
   reactjs,
+  framer,
+  prisma,
+  supabase,
   redux,
   tailwind,
   nodejs,
@@ -142,20 +143,32 @@ const technologies = [
     name: "jest",
     icon: jest,
   },
-  
+  {
+    name: "Framer Motion",
+    icon: framer,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
+  },
+  {
+    name: "Supabase",
+    icon: supabase,
+  },
 ];
 
 const experiences = [
   {
-    title: "Project Manager",
+    title: "Sr. Project Manager & Full Stack Developer",
     company_name: "Boldly Fine, LLC",
     icon: boldlyfine,
     iconBg: "#383E56",
-    date: "November - Present",
+    date: "November 2022 - Present",
     points: [
-      "Strategically orchestrates complex projects by aligning teams, managing resources, and ensuring success through effective communication and collaboration.",
-      "Specializing in project coordination, efficient planning, and organization of project activities, budget management, timeline oversight, and fostering a creative and productive team environment.",
-      "Identifying mitigating risks, proficiently solving problems, and ensuring the successful delivery of projects despite challenges.",
+      "Lead end-to-end project execution by aligning cross-functional teams, managing resources, and ensuring success through clear communication and collaboration.",
+      "Blend project management expertise with hands-on development to deliver scalable, high-performance web solutions tailored to client needs.",
+      "Oversee planning, budgeting, and timeline management while fostering a creative, efficient, and productive team environment.",
+      "Proactively identify and mitigate risks, solve problems efficiently, and ensure the successful delivery of projects despite challenges.",
     ],
   },
   {
@@ -289,8 +302,9 @@ const projects = [
       },
     ],
     image: digitalpp,
-    source_code_link: "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
-    deployed_link: "https://afternoon-springs-13154.herokuapp.com/"
+    source_code_link:
+      "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+    deployed_link: "https://afternoon-springs-13154.herokuapp.com/",
   },
   {
     name: "Film Filter",
@@ -334,7 +348,8 @@ const projects = [
     ],
     image: profilegen,
     source_code_link: "https://github.com/TyGosley/team-profile-generator",
-    deployed_link: "https://drive.google.com/file/d/13ZRr9mMGcIVyYjcc97YfvsTegwQ0tO1r/view",
+    deployed_link:
+      "https://drive.google.com/file/d/13ZRr9mMGcIVyYjcc97YfvsTegwQ0tO1r/view",
   },
   {
     name: "City Weather Monitor",
@@ -359,6 +374,5 @@ const projects = [
     deployed_link: "https://tygosley.github.io/city-weather-monitor/",
   },
 ];
-
 
 export { services, technologies, experiences, projects };
