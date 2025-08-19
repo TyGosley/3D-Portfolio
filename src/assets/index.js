@@ -1,4 +1,4 @@
-// Proficiencies 
+// Proficiencies
 import logo from "./logo.svg";
 import baplogo from "./baplogo.png";
 import backend from "./backend.png";
@@ -15,8 +15,7 @@ import talent from "./talent.png";
 import collaborating from "./collaborating.png";
 import tylerGResume from "./tylerGResume.pdf";
 
-
-// Technologies 
+// Technologies
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -30,7 +29,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import framer from "./tech/framer.png";
+import prisma from "./tech/prisma.png";
+import supabase from "./tech/supabase.png";
 
 import boldlyfine from "./company/boldlyfine.png";
 import stretchlab from "./company/stretchlab.png";
@@ -75,6 +76,9 @@ export {
   tailwind,
   typescript,
   threejs,
+  framer,
+  prisma,
+  supabase,
   selffit,
   boldlyfine,
   ymca,
