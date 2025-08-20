@@ -13,7 +13,7 @@ import frontend from "./frontend.png";
 import database from "./database.png";
 import talent from "./talent.png";
 import collaborating from "./collaborating.png";
-import tylerGResume from "./tylerGResume.pdf";
+// import tylerGResume from "./tylerGResume.pdf";
 
 // Technologies
 import css from "./tech/css.png";
