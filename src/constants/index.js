@@ -285,7 +285,7 @@ const projects = [
     ],
     image: tacticFitnessLogo,
     // source_code_link: "Insert LINK UPON DEPLOYMENT",
-    deployed_link: "https://young-fjord-87533.herokuapp.com/",
+    deployed_link: "https://app.tacticworksout.com/login",
   },
   {
     name: "Full Time Burgers",
@@ -306,8 +306,8 @@ const projects = [
       },
     ],
     image: fullTimeBurgers,
-    source_code_link: "https://github.com/TyGosley/upliftify-ai",
-    deployed_link: "https://young-fjord-87533.herokuapp.com/",
+    // source_code_link: "https://github.com/TyGosley/upliftify-ai",
+    deployed_link: "https://fulltimeburgers.com",
   },
   {
     name: "Coming Soon: CPG Rentals Webpage",
@@ -328,8 +328,8 @@ const projects = [
       },
     ],
     image: cpgRentalsSS,
-    source_code_link: "https://github.com/TyGosley/upliftify-ai",
-    deployed_link: "https://young-fjord-87533.herokuapp.com/",
+    // source_code_link: "https://github.com/TyGosley/upliftify-ai",
+    // deployed_link: "https://young-fjord-87533.herokuapp.com/",
   },
   {
     name: "Upliftify AI",
