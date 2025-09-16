@@ -26,6 +26,10 @@ import {
   filmfilter,
   profilegen,
   cityweathermon,
+  cpgRentalsSS,
+  fullTimeBurgers,
+  tacticFitness,
+  tacticFitnessLogo,
   threejs,
   talent,
   collaborating,
@@ -239,6 +243,94 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Tactic Fitness",
+    description:
+      "A fitness marketing site built to showcase Tactic fitness, highlight programs, and drive sign-ups through clear desgin and calls-to-action.",
+    tags: [
+      {
+        name: "web design",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "seo optimization",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tacticFitness,
+    // source_code_link: "INSERT LINK UPON DEPLOYMENT",
+    deployed_link: "https://www.tacticworksout.com/",
+  },
+  {
+    name: "Tactic Fitness App",
+    description:
+      "An interactive fitness platform providing members with daily workouts, video instructions, and progress tracking through a streamlined dashboard.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tacticFitnessLogo,
+    // source_code_link: "Insert LINK UPON DEPLOYMENT",
+    deployed_link: "https://young-fjord-87533.herokuapp.com/",
+  },
+  {
+    name: "Full Time Burgers",
+    description:
+      "A vibrant restaurant website highlighting the Fullt Time Burgers brand, menu,and customer experience.",
+    tags: [
+      {
+        name: "web design",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "seo optimization",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fullTimeBurgers,
+    source_code_link: "https://github.com/TyGosley/upliftify-ai",
+    deployed_link: "https://young-fjord-87533.herokuapp.com/",
+  },
+  {
+    name: "Coming Soon: CPG Rentals Webpage",
+    description:
+      "A generator rental website (in progress) focused on reliability, customer service, and easy booking.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "graphql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cpgRentalsSS,
+    source_code_link: "https://github.com/TyGosley/upliftify-ai",
+    deployed_link: "https://young-fjord-87533.herokuapp.com/",
+  },
   {
     name: "Upliftify AI",
     description:

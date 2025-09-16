@@ -47,6 +47,10 @@ import digitalpp from "./digitalpp.png";
 import filmfilter from "./filmfilter.png";
 import cityweathermon from "./cityweathermon.png";
 import profilegen from "./profilegen.png";
+import tacticFitness from "./tacticFitness.png";
+import tacticFitnessLogo from "./tacticFitnessLogo.jpg";
+import fullTimeBurgers from "./fullTimeBurgers.png";
+import cpgRentalsSS from "./cpgRentalsSS.png";
 
 export {
   logo,
@@ -91,4 +95,9 @@ export {
   filmfilter,
   cityweathermon,
   profilegen,
+  fullTimeBurgers,
+  cpgRentalsSS,
+  tacticFitness,
+  tacticFitnessLogo,
+  // tylerGResume, --- IGNORE ---
 };
