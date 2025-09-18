@@ -3,7 +3,10 @@ import { useForm, ValidationError } from "@formspree/react";
 import { validateEmail } from "../utils/helpers";
 import { styles } from "../styles";
 // import { EarthCanvas } from "./canvas";
-import MyImage from "../assets/whatsupdoc.jpg";
+
+// TEMP: hide headshot by commenting out the import
+// import MyImage from "../assets/whatsupdoc.jpg";
+
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { motion } from "framer-motion";
@@ -22,7 +25,6 @@ function Contact() {
   function handleChange(e) {
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
-
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
       } else {
@@ -42,11 +44,7 @@ function Contact() {
   }
 
   function resetForm() {
-    setFormState({
-      name: "",
-      email: "",
-      message: "",
-    });
+    setFormState({ name: "", email: "", message: "" });
     setIsSubmitted(true);
   }
 
@@ -58,7 +56,10 @@ function Contact() {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={
+        // TEMP: since the image column is hidden, use a simple column layout
+        `xl:mt-12 flex flex-col gap-10 overflow-hidden`
+      }
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -79,6 +80,7 @@ function Contact() {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
+
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your email</span>
             <input
@@ -90,6 +92,7 @@ function Contact() {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
+
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
@@ -114,12 +117,15 @@ function Contact() {
         </form>
       </motion.div>
 
+      {/* TEMP: Headshot column hidden for now — uncomment when you have a professional photo */}
+      {/*
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] flex items-center justify-center"
       >
-        <img src={MyImage} alt="My Image" className="w-full h-3/4 rounded-lg"/>
+        <img src={MyImage} alt="My Image" className="w-full h-3/4 rounded-lg" />
       </motion.div>
+      */}
     </div>
   );
 }

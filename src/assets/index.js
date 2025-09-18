@@ -34,6 +34,7 @@ import prisma from "./tech/prisma.png";
 import supabase from "./tech/supabase.png";
 
 import boldlyfine from "./company/boldlyfine.png";
+import fankyGraffBAP from "./company/fankyGraffBAP.png";
 import stretchlab from "./company/stretchlab.png";
 import prevail from "./company/prevail.png";
 import selffit from "./company/selffit.png";
@@ -85,6 +86,7 @@ export {
   supabase,
   selffit,
   boldlyfine,
+  fankyGraffBAP,
   ymca,
   stevensonfit,
   stretchlab,

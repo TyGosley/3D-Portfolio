@@ -22,39 +22,45 @@ const ProjectCard = ({
   deployed_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.2, 0.6)}>
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+        options={{ max: 15, scale: 1, speed: 350 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt="project_image"
+            alt={`${name} screenshot`}
             className="w-full h-full object-cover rounded-2xl"
+            loading="lazy"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
+            <button
+              type="button"
+              onClick={() =>
+                window.open(source_code_link, "_blank", "noopener,noreferrer")
+              }
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              aria-label={`${name} source code on GitHub`}
             >
               <img
                 src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
-            </div>
-            <div
-              onClick={() => window.open(deployed_link, "_blank")}
+            </button>
+
+            <button
+              type="button"
+              onClick={() =>
+                window.open(deployed_link, "_blank", "noopener,noreferrer")
+              }
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-2"
+              aria-label={`${name} live demo`}
             >
               <FiArrowUpRight className="text-white" size={18} />
-            </div>
+            </button>
           </div>
         </div>
 
@@ -81,12 +87,12 @@ const ProjectCard = ({
 const Projects = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+      <motion.div variants={textVariant()} className="relative z-10">
+        <p className={styles.sectionSubText}>My work</p>
+        <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex relative z-10">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -99,13 +105,12 @@ const Projects = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div
+        className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 relative z-10"
+        aria-label="Project cards grid"
+      >
         {projects.map((project, index) => (
-          <ProjectCard
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>

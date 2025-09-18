@@ -37,6 +37,7 @@ import {
   selffit,
   stretchlab,
   boldlyfine,
+  fankyGraffBAP,
   ymca,
   stevensonfit,
 } from "../assets";
@@ -162,6 +163,20 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Founder & Full-Stack Developer",
+    company_name: "Be Awesome Productions, LLC",
+    icon: fankyGraffBAP,
+    iconBg: "#383E56",
+    date: "Sept 2025 - Present",
+    points: [
+      "Lead full-stack website builds—from discovery and UX wireframes to production deployment—using React, Node.js, and modern tooling.",
+      "Engineer fast, SEO-friendly, and accessible experiences aligned with Core Web Vitals and WCAG best practices.",
+      "Own site maintenance and reliability: updates, security patches, uptime monitoring, analytics, and performance tuning.",
+      "Manage end-to-end delivery with clear scope, timelines, and communication; implement Git-based workflows and CI/CD for smooth releases.",
+    ],
+  },
+
   {
     title: "Sr. Project Manager & Full Stack Developer",
     company_name: "Boldly Fine, LLC",

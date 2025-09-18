@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-// eslint-disable-next-line no-unused-vars
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -11,19 +10,18 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 // eslint-disable-next-line react-refresh/only-export-components, react/prop-types
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt
+    className="xs:w-[250px] w-full"
+    options={{ max: 45, scale: 1, speed: 450 }} // <-- options belong on Tilt
+  >
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.2, 0.6)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div
-        // eslint-disable-next-line react/no-unknown-property
-        options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
+      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
-          alt="web-development"
+          alt={`${title}-icon`}
           className="w-16 h-16 object-contain"
         />
         <h3 className="text-white text-[20px] font-bold text-center">
@@ -38,20 +36,21 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* Heading */}
+      <motion.div variants={textVariant()} className="relative z-10">
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About Me.</h2>
       </motion.div>
 
-      {/* Staggered paragraph fade-ins */}
-      <div className="mt-4 max-w-3xl space-y-6">
+      {/* Copy */}
+      <div className="mt-4 max-w-3xl space-y-6 relative z-10">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="text-secondary text-[17px] leading-[30px]"
         >
           I’m Tyler Gosley, a Project Manager and Full Stack Web Developer based
           in Southern California, specializing in creating engaging,
-          high‑performance digital experiences. My career began in the fitness
+          high-performance digital experiences. My career began in the fitness
           industry, where I developed a passion for guiding others toward
           success: a passion that now fuels my approach to project management
           and development.
@@ -90,7 +89,8 @@ const About = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      {/* Services */}
+      <div className="mt-20 flex flex-wrap gap-10 relative z-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
