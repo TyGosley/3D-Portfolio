@@ -21,10 +21,10 @@ import {
   figma,
   jest,
   upliftifyAi,
-  metalMindz,
-  digitalpp,
+  // metalMindz,
+  // digitalpp,
   filmfilter,
-  profilegen,
+  // profilegen,
   cityweathermon,
   cpgRentalsSS,
   fullTimeBurgers,
@@ -47,20 +47,20 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
-  },
-  {
     id: "projects",
     title: "Projects",
   },
   {
-    id: "resume",
-    title: "Resume",
+    id: "work",
+    title: "Work",
   },
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "resume",
+    title: "Resume",
   },
 ];
 
@@ -244,7 +244,7 @@ const experiences = [
 
 const projects = [
   {
-    name: "Tactic Fitness",
+    name: "Tactic Fitness (Website)",
     description:
       "A fitness marketing site built to showcase Tactic fitness, highlight programs, and drive sign-ups through clear desgin and calls-to-action.",
     tags: [
@@ -288,9 +288,9 @@ const projects = [
     deployed_link: "https://app.tacticworksout.com/login",
   },
   {
-    name: "Full Time Burgers",
+    name: "Full Time Burgers (Website)",
     description:
-      "A vibrant restaurant website highlighting the Fullt Time Burgers brand, menu,and customer experience.",
+      "A vibrant restaurant website highlighting the Fullt Time Burgers brand, menu, and customer experience.",
     tags: [
       {
         name: "web design",
@@ -353,51 +353,51 @@ const projects = [
     source_code_link: "https://github.com/TyGosley/upliftify-ai",
     deployed_link: "https://young-fjord-87533.herokuapp.com/",
   },
-  {
-    name: "Metal Mindz",
-    description:
-      "MetalMindz is a social app for FRC robot builders. Show off your creations, connect with others, and get inspired. Simply create a profile, upload photos of your robots, and join a community of like-minded enthusiasts.",
-    tags: [
-      {
-        name: "node.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MySQL",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: metalMindz,
-    source_code_link: "https://github.com/mynamebrogrammer/MetalMindz",
-    deployed_link: "https://metal-mindz.herokuapp.com/",
-  },
-  {
-    name: "Digital Pencil Pusher",
-    description:
-      "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
-    tags: [
-      {
-        name: "css",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: digitalpp,
-    source_code_link:
-      "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
-    deployed_link: "https://afternoon-springs-13154.herokuapp.com/",
-  },
+  // {
+  //   name: "Metal Mindz",
+  //   description:
+  //     "MetalMindz is a social app for FRC robot builders. Show off your creations, connect with others, and get inspired. Simply create a profile, upload photos of your robots, and join a community of like-minded enthusiasts.",
+  //   tags: [
+  //     {
+  //       name: "node.js",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "restapi",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "MySQL",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: metalMindz,
+  //   source_code_link: "https://github.com/mynamebrogrammer/MetalMindz",
+  //   deployed_link: "https://metal-mindz.herokuapp.com/",
+  // },
+  // {
+  //   name: "Digital Pencil Pusher",
+  //   description:
+  //     "This application allows the user to write and store notes. The user then has the option to look back at previous notes and can delete unwanted or completed notes.",
+  //   tags: [
+  //     {
+  //       name: "css",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "javascript",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "node.js",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: digitalpp,
+  //   source_code_link:
+  //     "https://github.com/TyGosley/digital-pencil-pusher-note-taker",
+  //   deployed_link: "https://afternoon-springs-13154.herokuapp.com/",
+  // },
   {
     name: "Film Filter",
     description:
@@ -420,29 +420,29 @@ const projects = [
     source_code_link: "https://github.com/Michaelx626/Film-Filter",
     deployed_link: "https://michaelx626.github.io/Film-Filter/index.html",
   },
-  {
-    name: "Team Profile Generator",
-    description:
-      "This simple application allows you to generate a webpage that display's your team's basic info so that you have quick access to their information.",
-    tags: [
-      {
-        name: "jest",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: profilegen,
-    source_code_link: "https://github.com/TyGosley/team-profile-generator",
-    deployed_link:
-      "https://drive.google.com/file/d/13ZRr9mMGcIVyYjcc97YfvsTegwQ0tO1r/view",
-  },
+  // {
+  //   name: "Team Profile Generator",
+  //   description:
+  //     "This simple application allows you to generate a webpage that display's your team's basic info so that you have quick access to their information.",
+  //   tags: [
+  //     {
+  //       name: "jest",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "javascript",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "node.js",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: profilegen,
+  //   source_code_link: "https://github.com/TyGosley/team-profile-generator",
+  //   deployed_link:
+  //     "https://drive.google.com/file/d/13ZRr9mMGcIVyYjcc97YfvsTegwQ0tO1r/view",
+  // },
   {
     name: "City Weather Monitor",
     description:

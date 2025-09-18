@@ -27,9 +27,9 @@ const App = () => {
         <Projects />
         <Experience />
         {/* <Feedbacks /> */}
+          <Contact />
         <Resume />
         <div className="relative z-0">
-          <Contact />
           <StarsCanvas />
         </div>
       </div>
