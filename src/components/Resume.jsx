@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import tylerGResume from "../assets/tylerGResume.pdf";
+import tgPMRes from "../assets/tgPMRes.pdf";
 
 
 const Resume = () => {
@@ -25,8 +25,8 @@ const Resume = () => {
         >
           <div className="flex justify-center items-center">
             <a
-              href={tylerGResume}
-              download="tylerGResume.pdf"
+              href={tgPMRes}
+              download="tgPMRes.pdf"
               className="text-white font-black text-[48px]"
             >
               <FiDownload />
