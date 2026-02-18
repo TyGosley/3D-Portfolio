@@ -1,5 +1,5 @@
 import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import { validateEmail } from "../utils/helpers";
 import { styles } from "../styles";
 // import { EarthCanvas } from "./canvas";
@@ -20,32 +20,38 @@ function Contact() {
   });
   const { name, email, message } = formState;
   const [errorMessage, setErrorMessage] = React.useState("");
-  const [isSubmitted, setIsSubmitted] = React.useState(false);
 
   function handleChange(e) {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
+    const { name: fieldName, value } = e.target;
+
+    setFormState((prevFormState) => ({
+      ...prevFormState,
+      [fieldName]: value,
+    }));
+
+    if (fieldName === "email") {
+      if (!value.length) {
+        setErrorMessage("Email is required.");
+        return;
+      }
+
+      const isValid = validateEmail(value);
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
       } else {
         setErrorMessage("");
       }
     } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+      if (!value.length) {
+        setErrorMessage(`${fieldName} is required.`);
       } else {
         setErrorMessage("");
       }
-    }
-
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
     }
   }
 
   function resetForm() {
     setFormState({ name: "", email: "", message: "" });
-    setIsSubmitted(true);
   }
 
   async function handleFormSubmit(event) {
@@ -110,9 +116,9 @@ function Contact() {
           <button
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-            disabled={isSubmitted}
+            disabled={state.submitting}
           >
-            {isSubmitted ? "Sending..." : "Send"}
+            {state.submitting ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>

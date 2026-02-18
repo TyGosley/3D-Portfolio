@@ -20,16 +20,18 @@ import {
   git,
   figma,
   jest,
-  upliftifyAi,
+  // upliftifyAi,
   // metalMindz,
   // digitalpp,
   filmfilter,
   // profilegen,
-  cityweathermon,
+  // cityweathermon,
   cpgRentalsSS,
   fullTimeBurgers,
   tacticFitness,
   tacticFitnessLogo,
+  efcHP,
+  broadcastMode,
   threejs,
   talent,
   collaborating,
@@ -347,27 +349,71 @@ const projects = [
     // deployed_link: "https://young-fjord-87533.herokuapp.com/",
   },
   {
-    name: "Upliftify AI",
+    name: "Coming Soon: Emergence Financial Corporation Webpage",
     description:
-      "User-centric platform that allows users to enter their current mood and get suggestions for activities to improve or enhance their mood.",
+      "A landing page for a financial firm, showcasing services, team, and contact information with a clean, professional design.",
     tags: [
       {
-        name: "react",
+        name: "web design",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "graphql",
+        name: "seo optimization",
         color: "pink-text-gradient",
       },
     ],
-    image: upliftifyAi,
-    source_code_link: "https://github.com/TyGosley/upliftify-ai",
-    deployed_link: "https://young-fjord-87533.herokuapp.com/",
+    image: efcHP,
+    // source_code_link: "https://github.com/TyGosley/upliftify-ai",
+    // deployed_link: "https://young-fjord-87533.herokuapp.com/",
   },
+  {
+    name: "Coming Soon: Be Awesome Productions Website",
+    description:
+      "An OS-inspired portfolio experience with VHS overlays, docks, and interactive project windows built mobile-first.",
+    tags: [
+      {
+        name: "web design",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: broadcastMode,
+    // source_code_link: "https://github.com/TyGosley/upliftify-ai",
+    // deployed_link: "https://young-fjord-87533.herokuapp.com/",
+  },
+  // {
+  //   name: "Upliftify AI",
+  //   description:
+  //     "User-centric platform that allows users to enter their current mood and get suggestions for activities to improve or enhance their mood.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "graphql",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: upliftifyAi,
+  //   source_code_link: "https://github.com/TyGosley/upliftify-ai",
+  //   deployed_link: "https://young-fjord-87533.herokuapp.com/",
+  // },
   // {
   //   name: "Metal Mindz",
   //   description:
@@ -458,28 +504,28 @@ const projects = [
   //   deployed_link:
   //     "https://drive.google.com/file/d/13ZRr9mMGcIVyYjcc97YfvsTegwQ0tO1r/view",
   // },
-  {
-    name: "City Weather Monitor",
-    description:
-      "The City Weather Monitor will help users find a major city's current weather as well as a 5 day forecast. The weather will display the date, the temperature, wind, and humidity.",
-    tags: [
-      {
-        name: "css",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "api key",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: cityweathermon,
-    source_code_link: "https://github.com/TyGosley/city-weather-monitor",
-    deployed_link: "https://tygosley.github.io/city-weather-monitor/",
-  },
+  // {
+  //   name: "City Weather Monitor",
+  //   description:
+  //     "The City Weather Monitor will help users find a major city's current weather as well as a 5 day forecast. The weather will display the date, the temperature, wind, and humidity.",
+  //   tags: [
+  //     {
+  //       name: "css",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "html",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "api key",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: cityweathermon,
+  //   source_code_link: "https://github.com/TyGosley/city-weather-monitor",
+  //   deployed_link: "https://tygosley.github.io/city-weather-monitor/",
+  // },
 ];
 
 export { services, technologies, experiences, projects };

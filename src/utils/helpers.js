@@ -1,5 +1,7 @@
 export function validateEmail(email) {
-    // eslint-disable-next-line no-useless-escape
-    const emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    if (!email) return false;
+
+    // Allows common email formats (uppercase, plus signs, multi-part domains).
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
