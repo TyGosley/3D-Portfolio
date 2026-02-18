@@ -52,6 +52,8 @@ import tacticFitness from "./tacticFitness.png";
 import tacticFitnessLogo from "./tacticFitnessLogo.jpg";
 import fullTimeBurgers from "./fullTimeBurgers.png";
 import cpgRentalsSS from "./cpgRentalsSS.png";
+import emergenceHP from "./emergenceHP.png";
+import broadcastMode from "./broadcastMode.png";
 
 export {
   logo,
@@ -101,5 +103,7 @@ export {
   cpgRentalsSS,
   tacticFitness,
   tacticFitnessLogo,
+  emergenceHP,
+  broadcastMode,
   // tylerGResume, --- IGNORE ---
 };
